@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AlgGeom5"
+    tools:showIn="@layout/activity_alg_geom5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/fab_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+
+                <ImageView
+                    android:id="@+id/alggeom5_1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:paddingTop="20dp"
+                    app:srcCompat="@drawable/alggeom5_1_2" />
+                <ImageView
+                    android:id="@+id/alggeom5_2_3_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/alggeom5_2_3_4" />
+
+                <ImageView
+                    android:id="@+id/alggeom5_4_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/alggeom5_4_5" />
+                <ImageView
+                    android:id="@+id/alggeom5_5_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/alggeom5_5_6" />
+
+                <ImageView
+                    android:id="@+id/alggeom5_6_7_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/alggeom5_6_7_8" />
+
+                <ImageView
+                    android:id="@+id/alggeom5_8_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/alggeom5_8_9" />
+
+
+                <ImageView
+                    android:id="@+id/alggeom5_9_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/alggeom5_9_10" />
+                <ImageView
+                    android:id="@+id/alggeom5_10_11_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/alggeom5_10_11_12" />
+                <ImageView
+                    android:id="@+id/alggeom5_12_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/alggeom5_12_13" />
+                <ImageView
+                    android:id="@+id/alggeom5_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/alggeom5_13" />
+
+                <ImageView
+                    android:id="@+id/alggeom5_13_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/alggeom5_13_14" />
+                <ImageView
+                    android:id="@+id/alggeom5_14_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/alggeom5_14_15" />
+                <ImageView
+                    android:id="@+id/alggeom5_15k"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/alggeom5_15k" />
+
+                <TextView
+                    android:id="@+id/mathprofi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Источник: http://mathprofi.ru "
+                    android:textColor="#444444"
+                    android:textSize="17dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

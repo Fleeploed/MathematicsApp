@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".VectorMathAndGeom"
+    tools:showIn="@layout/activity_vector_math_and_geom">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/fab_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+    <Button
+        android:id="@+id/button_vektornaya1"
+
+        android:layout_width="440dp"
+        android:layout_height="60dp"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/gotham"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:text="Решение задач 1"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_vektornaya2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+    </Button>
+
+    <Button
+        android:id="@+id/button_vektornaya2"
+
+        android:layout_width="440dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/gotham"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:text="Решение задач 2"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_vektornaya3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_vektornaya1">
+
+    </Button>
+
+
+    <Button
+        android:id="@+id/button_vektornaya3"
+
+        android:layout_width="440dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/gotham"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:text="Решение задач 3"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_vektornaya4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_vektornaya2">
+
+    </Button>
+
+
+    <Button
+        android:id="@+id/button_vektornaya4"
+        android:layout_gravity="center"
+        android:layout_width="440dp"
+        android:layout_height="60dp"
+
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/gotham"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:text="Решение задач 4"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_vektornaya5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_vektornaya3">
+
+    </Button>
+
+    <Button
+        android:id="@+id/button_vektornaya5"
+        android:layout_gravity="center"
+        android:layout_width="440dp"
+        android:layout_height="60dp"
+
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/gotham"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:text="Решение задач 5"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_vektornaya6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_vektornaya4">
+
+    </Button>
+
+    <Button
+        android:id="@+id/button_vektornaya6"
+        android:layout_gravity="center"
+        android:layout_width="440dp"
+        android:layout_height="60dp"
+
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/gotham"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:text="Решение задач 6"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_vektornaya7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_vektornaya5">
+
+    </Button>
+
+    <Button
+        android:id="@+id/button_vektornaya7"
+        android:layout_gravity="center"
+        android:layout_width="440dp"
+        android:layout_height="60dp"
+
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/gotham"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:text="Решение задач 7"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_vektornaya8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_vektornaya6">
+
+    </Button>
+
+    <Button
+        android:id="@+id/button_vektornaya8"
+        android:layout_gravity="center"
+        android:layout_width="440dp"
+        android:layout_height="60dp"
+
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/gotham"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:text="Решение задач 8"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_vektornaya9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_vektornaya7">
+
+    </Button>
+    <Button
+        android:id="@+id/button_vektornaya9"
+        android:layout_gravity="center"
+        android:layout_width="440dp"
+        android:layout_height="60dp"
+
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/gotham"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:text="Решение задач 9"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_vektornaya10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_vektornaya8">
+
+    </Button>
+        <Button
+            android:id="@+id/button_vektornaya10"
+            android:layout_gravity="center"
+            android:layout_width="440dp"
+            android:layout_height="60dp"
+
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buttonshape"
+            android:fontFamily="@font/gotham"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="Решение задач 10"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_vektornaya9">
+
+        </Button>
+
+    </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

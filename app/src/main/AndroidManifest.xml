@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fleeploed.mathematicsapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.fleeploed.mathematicsapp.Calculator"
+            android:label="@string/title_activity_calculator"
+            android:parentActivityName="com.fleeploed.mathematicsapp.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.AlgGeom10"
+            android:label="@string/title_activity_alg_geom10"
+            android:parentActivityName="com.fleeploed.mathematicsapp.VectorMathAndGeom"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.TheorieVer"
+            android:label="@string/title_activity_theorie_ver"
+            android:parentActivityName="com.fleeploed.mathematicsapp.FormulasActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.Logarifms"
+            android:label="@string/title_activity_logarifms"
+            android:parentActivityName="com.fleeploed.mathematicsapp.FormulasActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.TablicaProizvodnych"
+            android:label="@string/title_activity_tablica_proizvodnych"
+            android:parentActivityName="com.fleeploed.mathematicsapp.FormulasActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.AlgGeom9"
+            android:label="@string/title_activity_alg_geom9"
+            android:parentActivityName="com.fleeploed.mathematicsapp.VectorMathAndGeom"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.AlgGeom8"
+            android:label="@string/title_activity_alg_geom8"
+            android:parentActivityName="com.fleeploed.mathematicsapp.VectorMathAndGeom"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.AlgGeom7"
+            android:label="@string/title_activity_alg_geom7"
+            android:parentActivityName="com.fleeploed.mathematicsapp.VectorMathAndGeom"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.AlgGeom6"
+            android:label="@string/title_activity_alg_geom6"
+            android:parentActivityName="com.fleeploed.mathematicsapp.VectorMathAndGeom"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.AlgGeom5"
+            android:label="@string/title_activity_alg_geom5"
+            android:parentActivityName="com.fleeploed.mathematicsapp.VectorMathAndGeom"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.AlgGeom4"
+            android:label="@string/title_activity_alg_geom4"
+            android:parentActivityName="com.fleeploed.mathematicsapp.VectorMathAndGeom"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.AlgGeom3"
+            android:label="@string/title_activity_alg_geom3"
+            android:parentActivityName="com.fleeploed.mathematicsapp.VectorMathAndGeom"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.AlgGeom2"
+            android:label="@string/title_activity_alg_geom2"
+            android:parentActivityName="com.fleeploed.mathematicsapp.VectorMathAndGeom"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.Alggeom1"
+            android:label="@string/title_activity_vektornaya"
+            android:parentActivityName="com.fleeploed.mathematicsapp.VectorMathAndGeom"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.Trigonomeria"
+            android:label="@string/title_activity_trigonomeria"
+            android:parentActivityName="com.fleeploed.mathematicsapp.FormulasActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.Progresii"
+            android:label="@string/title_activity_progresii"
+            android:parentActivityName="com.fleeploed.mathematicsapp.FormulasActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.FormulSokr"
+            android:label="@string/title_activity_formul_sokr"
+            android:parentActivityName="com.fleeploed.mathematicsapp.FormulasActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.Priznakidelimosti"
+            android:label="@string/title_activity_priznakidelimosti"
+            android:parentActivityName="com.fleeploed.mathematicsapp.FormulasActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.ModulFomulas"
+            android:label="@string/title_activity_modul_fomulas"
+            android:parentActivityName="com.fleeploed.mathematicsapp.FormulasActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.FormulasActivity"
+            android:label="@string/title_activity_formulas"
+            android:parentActivityName="com.fleeploed.mathematicsapp.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.VectorMathAndGeom"
+            android:label="@string/title_activity_vector_math_and_geom"
+            android:parentActivityName="com.fleeploed.mathematicsapp.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fleeploed.mathematicsapp.MainActivity"
+            android:label="Высшая математика"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3860319943737586~8102242104" />
+    </application>
+
+</manifest>

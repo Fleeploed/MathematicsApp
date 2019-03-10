@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fleeploed.mathematicsapp.MainActivity">
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_share_black_24dp"
+        android:title="Поделиться"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_vk"
+        android:icon="@drawable/vk_logo"
+        app:showAsAction="ifRoom"
+        android:title="Страничка разработчика"
+        />
+
+
+
+</menu>
