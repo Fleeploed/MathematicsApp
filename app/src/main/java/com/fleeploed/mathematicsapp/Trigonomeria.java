@@ -20,14 +20,7 @@ public class Trigonomeria extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        FloatingActionButton fab = findViewById(R.id.calculator_Trigonomeria);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Trigonomeria.this, Calculator.class);
-                startActivity(intent);
-            }
-        });
+
 
     }
     @Override

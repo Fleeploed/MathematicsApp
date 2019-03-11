@@ -19,14 +19,7 @@ public class TheorieVer extends AppCompatActivity {
         getSupportActionBar().setTitle("Теория вероятности");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); //back formulasActivity
 
-        FloatingActionButton fab = findViewById(R.id.calculator_TheorieVer);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(TheorieVer.this, Calculator.class);
-                startActivity(intent);
-            }
-        });
+
 
     }
 

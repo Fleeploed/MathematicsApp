@@ -21,14 +21,7 @@ public class AlgGeom8 extends AppCompatActivity {
 
 
 
-        FloatingActionButton fab = findViewById(R.id.calculator_AlgGeom8);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AlgGeom8.this, Calculator.class);
-                startActivity(intent);
-            }
-        });
+
 
     }
 

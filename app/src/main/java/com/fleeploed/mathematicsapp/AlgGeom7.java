@@ -19,14 +19,6 @@ public class AlgGeom7 extends AppCompatActivity {
         getSupportActionBar().setTitle("7. Решение задач");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        FloatingActionButton fab = findViewById(R.id.calculator_AlgGeom7);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AlgGeom7.this, Calculator.class);
-                startActivity(intent);
-            }
-        });
 
     }
 

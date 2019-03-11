@@ -20,15 +20,6 @@ public class AlgGeom5 extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        FloatingActionButton fab = findViewById(R.id.calculator_AlgGeom5);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AlgGeom5.this, Calculator.class);
-                startActivity(intent);
-            }
-        });
-
     }
 
 }

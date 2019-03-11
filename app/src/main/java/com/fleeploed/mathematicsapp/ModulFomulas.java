@@ -19,14 +19,6 @@ public class ModulFomulas extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        FloatingActionButton fab = findViewById(R.id.calculator_ModulFomulas);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ModulFomulas.this, Calculator.class);
-                startActivity(intent);
-            }
-        });
 
     }
 

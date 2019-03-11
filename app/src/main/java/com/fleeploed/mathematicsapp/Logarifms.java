@@ -19,14 +19,7 @@ public class Logarifms extends AppCompatActivity {
         getSupportActionBar().setTitle("Логарифмы");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); //back formulasActivity
 
-        FloatingActionButton fab = findViewById(R.id.calculator_Logarifms);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Logarifms.this, Calculator.class);
-                startActivity(intent);
-            }
-        });
+
 
     }
 

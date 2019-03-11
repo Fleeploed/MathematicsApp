@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_calculator.*
+import kotlinx.android.synthetic.main.content_calculator.*
 import net.objecthunter.exp4j.ExpressionBuilder
 
 class Calculator : AppCompatActivity() {
@@ -72,6 +73,7 @@ class Calculator : AppCompatActivity() {
             tvResult.text = ""
         }
 
+
         tvBack.setOnClickListener {
             val string = tvExpression.text.toString()
             if (string.isNotEmpty()) {
@@ -95,6 +97,7 @@ class Calculator : AppCompatActivity() {
                 Log.d("Exception", " message : " + e.message)
             }
         }
+
 
     }
 

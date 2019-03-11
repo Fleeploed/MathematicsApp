@@ -95,14 +95,7 @@ public class FormulasActivity extends AppCompatActivity {
             }
         });
 
-        FloatingActionButton fab = findViewById(R.id.calculator_formulas);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(FormulasActivity.this, Calculator.class);
-                startActivity(intent);
-            }
-        });
+
 
     }
 

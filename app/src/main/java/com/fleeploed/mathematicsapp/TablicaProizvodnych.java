@@ -19,14 +19,7 @@ public class TablicaProizvodnych extends AppCompatActivity {
         getSupportActionBar().setTitle("Таблица производных и интегралов");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); //back formulasActivity
 
-        FloatingActionButton fab = findViewById(R.id.calculator_TablicaProizvodnych);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(TablicaProizvodnych.this, Calculator.class);
-                startActivity(intent);
-            }
-        });
+
     }
 
 }

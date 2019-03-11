@@ -23,15 +23,5 @@
     <include layout="@layout/content_tablica_proizvodnych" />
 
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/calculator_Priznakidelimosti"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:clickable="true"
-        app:fabCustomSize="60dp"
-        app:maxImageSize="60dp"
-        app:srcCompat="@drawable/calculator_blue" />
 
 </android.support.design.widget.CoordinatorLayout>

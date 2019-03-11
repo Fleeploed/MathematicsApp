@@ -20,16 +20,9 @@ public class Priznakidelimosti extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); //back formulasActivity
 
 
-        FloatingActionButton fab = findViewById(R.id.calculator_Priznakidelimosti);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Priznakidelimosti.this, Calculator.class);
-                startActivity(intent);
-            }
-        });
 
     }
+
 
     @Override
     public void finish() {

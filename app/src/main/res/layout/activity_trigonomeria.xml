@@ -22,15 +22,5 @@
 
     <include layout="@layout/content_trigonomeria" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/calculator_Trigonomeria"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:clickable="true"
-        app:fabCustomSize="60dp"
-        app:maxImageSize="60dp"
-        app:srcCompat="@drawable/calculator_green_blue" />
 
 </android.support.design.widget.CoordinatorLayout>

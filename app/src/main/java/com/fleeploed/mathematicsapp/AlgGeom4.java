@@ -20,14 +20,6 @@ public class AlgGeom4 extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        FloatingActionButton fab = findViewById(R.id.calculator_AlgGeom4);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AlgGeom4.this, Calculator.class);
-                startActivity(intent);
-            }
-        });
 
     }
 

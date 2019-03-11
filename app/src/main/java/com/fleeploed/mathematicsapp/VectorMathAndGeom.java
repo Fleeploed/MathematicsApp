@@ -109,15 +109,6 @@ public class VectorMathAndGeom extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        FloatingActionButton fab = findViewById(R.id.calculator_VectorMathAndGeom);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(VectorMathAndGeom.this, Calculator.class);
-                startActivity(intent);
-            }
-        });
     }
 
     @Override
