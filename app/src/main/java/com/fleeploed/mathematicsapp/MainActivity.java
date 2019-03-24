@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity
 
             case R.id.action_vk:
                 Intent browserIntent = new
-                        Intent(Intent.ACTION_VIEW, Uri.parse("https://vk.com/fleeploed"));
+                        Intent(Intent.ACTION_VIEW, Uri.parse("https://vk.com/mathapp"));
                 startActivity(browserIntent);
 
         }
