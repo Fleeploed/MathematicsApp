@@ -9,125 +9,25 @@
     tools:showIn="@layout/activity_trigonomeria">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="626dp"
+        android:layout_height="0dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/adView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-
-    <ScrollView
+        <com.github.barteksc.pdfviewer.PDFView
+            android:id="@+id/osnov_formuly_trigonom"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingBottom="@dimen/fab_margin"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0">
+            android:layout_height="match_parent">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="0dp">
-
-                <ImageView
-                    android:id="@+id/sootnoshenietrigonom"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp"
-                    app:srcCompat="@drawable/sootnoshenietrigonom" />
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:paddingBottom="20dp"
-                    app:srcCompat="@drawable/formulslozhenie" />
-
-                <ImageView
-                    android:id="@+id/formulsokr"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:paddingBottom="20dp"
-                    app:srcCompat="@drawable/formulsokr" />
-
-                <ImageView
-                    android:id="@+id/vyrazhtrigfunkc"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:paddingBottom="20dp"
-                    app:srcCompat="@drawable/vyrazhtrigfunkc" />
-
-                <ImageView
-                    android:id="@+id/formuldvojnarg"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:paddingBottom="20dp"
-                    app:srcCompat="@drawable/formuldvojnarg" />
-
-                <ImageView
-                    android:id="@+id/formultrojnogo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:paddingBottom="20dp"
-                    app:srcCompat="@drawable/formultrojnogo" />
-
-                <ImageView
-                    android:id="@+id/formulpolovinugla"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:paddingBottom="20dp"
-                    app:srcCompat="@drawable/formulpolovinugla" />
-
-                <ImageView
-                    android:id="@+id/formulpreobrazovanie"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:paddingBottom="20dp"
-                    app:srcCompat="@drawable/formulpreobrazovanie" />
-
-                <ImageView
-                    android:id="@+id/formulpreobsum"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:paddingBottom="20dp"
-                    app:srcCompat="@drawable/formulpreobsum" />
-
-                <ImageView
-                    android:id="@+id/svojstvaobratnych"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:paddingBottom="20dp"
-                    app:srcCompat="@drawable/svojstvaobratnych" />
-
-
-            </LinearLayout>
-
-        </ScrollView>
+        </com.github.barteksc.pdfviewer.PDFView>
     </LinearLayout>
 
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
-        android:layout_width="0dp"
-        android:layout_height="67dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="1dp"

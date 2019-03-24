@@ -29,7 +29,7 @@ public class FormulasActivity extends AppCompatActivity
     ListView listView;
     String[] listviewitems = new String[]{"Признаки делимости, таблица простых чисел",
             "Корни и степени, модуль числа","Формулы сокращенного умножения","Прогрессии","Тригонометрия",
-            "Таблица производных и интегралов","Логарифмы","Теория вероятности"};
+            "Пределы, таблица производных и интегралов","Логарифмы","Теория вероятности"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

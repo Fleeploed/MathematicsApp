@@ -22,7 +22,4 @@
 
     <include layout="@layout/content_formul_sokr" />
 
-
-
-
 </android.support.design.widget.CoordinatorLayout>
