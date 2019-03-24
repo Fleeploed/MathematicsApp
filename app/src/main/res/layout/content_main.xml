@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,57 +9,12 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <Button
-        android:id="@+id/formulas"
 
-        android:layout_width="440dp"
-        android:layout_height="60dp"
+    <ListView
+        android:id="@+id/listview_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/buttonshape"
-        android:fontFamily="@font/gotham"
-        android:shadowColor="#000000"
-        android:shadowDx="0"
-        android:shadowDy="1"
-        android:shadowRadius="5"
-        android:text="Основные формулы"
-        android:textAllCaps="true"
-        android:textColor="#FFFFFF"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/button_vectorMath_and_geom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+    </ListView>
 
-    </Button>
-
-    <Button
-        android:id="@+id/button_vectorMath_and_geom"
-
-        android:layout_width="440dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/buttonshape"
-        android:fontFamily="@font/gotham"
-        android:shadowColor="#000000"
-        android:shadowDx="0"
-        android:shadowDy="1"
-        android:shadowRadius="5"
-        android:text="Векторная алгебра и аналитическая геометрия"
-        android:textAllCaps="true"
-        android:textColor="#FFFFFF"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_formul_sokr_umn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/formulas">
-
-    </Button>
-
-
-
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

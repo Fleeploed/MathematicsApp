@@ -11,7 +11,7 @@
         android:id="@+id/action_vk"
         android:icon="@drawable/vk_logo"
         app:showAsAction="ifRoom"
-        android:title="Страничка разработчика"
+        android:title="Группа вк"
         />
 
 

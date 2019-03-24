@@ -9,12 +9,18 @@
     tools:showIn="@layout/activity_theorie_ver">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="626dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
-        <ScrollView
+
+    <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingBottom="@dimen/fab_margin"
@@ -60,5 +66,17 @@
 
 
     </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="ca-app-pub-3860319943737586/8666583385"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

@@ -9,10 +9,17 @@
     tools:showIn="@layout/activity_trigonomeria">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <ScrollView
+        android:layout_height="626dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingBottom="@dimen/fab_margin"
@@ -37,6 +44,7 @@
                     android:paddingTop="20dp"
                     android:paddingBottom="20dp"
                     app:srcCompat="@drawable/sootnoshenietrigonom" />
+
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="match_parent"
@@ -44,6 +52,7 @@
                     android:adjustViewBounds="true"
                     android:paddingBottom="20dp"
                     app:srcCompat="@drawable/formulslozhenie" />
+
                 <ImageView
                     android:id="@+id/formulsokr"
                     android:layout_width="match_parent"
@@ -51,6 +60,7 @@
                     android:adjustViewBounds="true"
                     android:paddingBottom="20dp"
                     app:srcCompat="@drawable/formulsokr" />
+
                 <ImageView
                     android:id="@+id/vyrazhtrigfunkc"
                     android:layout_width="match_parent"
@@ -58,6 +68,7 @@
                     android:adjustViewBounds="true"
                     android:paddingBottom="20dp"
                     app:srcCompat="@drawable/vyrazhtrigfunkc" />
+
                 <ImageView
                     android:id="@+id/formuldvojnarg"
                     android:layout_width="match_parent"
@@ -65,6 +76,7 @@
                     android:adjustViewBounds="true"
                     android:paddingBottom="20dp"
                     app:srcCompat="@drawable/formuldvojnarg" />
+
                 <ImageView
                     android:id="@+id/formultrojnogo"
                     android:layout_width="match_parent"
@@ -72,6 +84,7 @@
                     android:adjustViewBounds="true"
                     android:paddingBottom="20dp"
                     app:srcCompat="@drawable/formultrojnogo" />
+
                 <ImageView
                     android:id="@+id/formulpolovinugla"
                     android:layout_width="match_parent"
@@ -79,6 +92,7 @@
                     android:adjustViewBounds="true"
                     android:paddingBottom="20dp"
                     app:srcCompat="@drawable/formulpolovinugla" />
+
                 <ImageView
                     android:id="@+id/formulpreobrazovanie"
                     android:layout_width="match_parent"
@@ -86,6 +100,7 @@
                     android:adjustViewBounds="true"
                     android:paddingBottom="20dp"
                     app:srcCompat="@drawable/formulpreobrazovanie" />
+
                 <ImageView
                     android:id="@+id/formulpreobsum"
                     android:layout_width="match_parent"
@@ -93,6 +108,7 @@
                     android:adjustViewBounds="true"
                     android:paddingBottom="20dp"
                     app:srcCompat="@drawable/formulpreobsum" />
+
                 <ImageView
                     android:id="@+id/svojstvaobratnych"
                     android:layout_width="match_parent"
@@ -102,10 +118,23 @@
                     app:srcCompat="@drawable/svojstvaobratnych" />
 
 
-
             </LinearLayout>
 
         </ScrollView>
     </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="ca-app-pub-3860319943737586/8666583385"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

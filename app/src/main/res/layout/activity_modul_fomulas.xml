@@ -22,9 +22,4 @@
 
     <include layout="@layout/content_modul_fomulas" />
 
-
-
-
-
-
 </android.support.design.widget.CoordinatorLayout>

@@ -9,9 +9,13 @@
     tools:showIn="@layout/activity_alg_geom6">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <ScrollView
@@ -39,7 +43,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
-                    android:paddingTop="20dp"
                     app:srcCompat="@drawable/alggeom6_1" />
                 <ImageView
                     android:id="@+id/alggeom6_2"
@@ -66,20 +69,27 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
+                    android:layout_marginBottom="67dp"
                     app:srcCompat="@drawable/alggeom6_9k" />
 
-                <TextView
-                    android:id="@+id/mathprofi"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Источник: http://mathprofi.ru "
-                    android:textColor="#444444"
-                    android:textSize="17dp"/>
+
 
             </LinearLayout>
 
         </ScrollView>
     </LinearLayout>
 
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="ca-app-pub-3860319943737586/8666583385"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
