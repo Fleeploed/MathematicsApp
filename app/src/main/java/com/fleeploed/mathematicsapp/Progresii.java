@@ -26,7 +26,7 @@ public class Progresii extends AppCompatActivity {
                 "ca-app-pub-3860319943737586~1074237669");
 
         pdfViewer=(PDFView) findViewById(R.id.progresii_nerav);
-        pdfViewer.fromAsset("progresii_nerav.pdf").load();
+        pdfViewer.fromAsset("formul/progresii_nerav.pdf").load();
 
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

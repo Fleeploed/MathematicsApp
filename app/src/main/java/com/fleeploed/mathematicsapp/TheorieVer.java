@@ -1,11 +1,8 @@
 package com.fleeploed.mathematicsapp;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 
 import com.github.barteksc.pdfviewer.PDFView;
 import com.google.android.gms.ads.AdRequest;
@@ -30,7 +27,7 @@ public class TheorieVer extends AppCompatActivity {
                 "ca-app-pub-3860319943737586~1074237669");
 
         pdfViewer=(PDFView) findViewById(R.id.osnov_formuly_kom);
-        pdfViewer.fromAsset("osnov_formuly_kom.pdf").load();
+        pdfViewer.fromAsset("formul/osnov_formuly_kom.pdf").load();
 
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

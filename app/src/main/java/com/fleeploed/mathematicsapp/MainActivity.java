@@ -16,20 +16,51 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ExpandableListAdapter;
+import android.widget.ExpandableListView;
 import android.widget.ListView;
+
 import com.romainpiel.shimmer.Shimmer;
 import com.romainpiel.shimmer.ShimmerTextView;
 
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    ShimmerTextView textView;
-    Shimmer shimmer;
 
-    ListView listView;
-    String[] listviewitems = new String[]{"Основные формулы", "Векторная алгебра и аналитическая геометрия"};
+    List<String> ChildList;
+    Map<String, List<String>> ParentListItems;
+    ExpandableListView expandablelistView;
+
+    // Assign Parent list items here.
+    List<String> ParentList = new ArrayList<String>();
+
+    {
+        ParentList.add("Основные формулы");
+        ParentList.add("Векторная алгебра и аналитическая геометрия");
+        ParentList.add("Пределы - lim...(указать N(ε))");
+        ParentList.add("Пределы - вычислить пределы числовых последовательностей");
+    }
+
+    // Assign children list element using string array.
+    String[] formulas = {"Признаки делимости, таблица простых чисел", "Корни и степени, модуль числа",
+            "Формула сокращенного умножения", "Прогресии", "Тригонометрия",
+            "Пределы, таблица производных и интегралов", "Логарифмы", "Теория вероятности", "Комплексные числа"};
+    String[] VectorAlg = {"Решения задач 1", "Решения задач 2", "Решения задач 3", "Решения задач 4",
+            "Решения задач 5", "Решения задач 6", "Решения задач 7", "Решения задач 8", "Решения задач 9",
+            "Решения задач 10"};
+
+    String[] Predely = {"Решения задач 1-5", "Решения задач 6-10", "Решения задач 11-15",
+            "Решения задач 16-20", "Решения задач 21-25", "Решения задач 26-30"};
+
+    String[] Predely2 = {"Решения задач 1-9", "Решения задач 10-22", "Решения задач 23-31"};
+//    String[] ByDefalutMessage = {"Items Loading"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,33 +80,175 @@ public class MainActivity extends AppCompatActivity
 
         getSupportActionBar().setTitle("Высшая математика"); //название проекта в actionbar
 
+        ParentListItems = new LinkedHashMap<String, List<String>>();
 
-        listView = (ListView) findViewById(R.id.listview_main);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, android.R.id.text1,
-                listviewitems);
+        for (String HoldItem : ParentList) {
+            if (HoldItem.equals("Основные формулы")) {
+                loadChild(formulas);
+            }
+            else if (HoldItem.equals("Векторная алгебра и аналитическая геометрия")) {
+                loadChild(VectorAlg);
+            }
+            else if (HoldItem.equals("Пределы - lim...(указать N(ε))")) {
+                loadChild(Predely);
+            }
+            else if (HoldItem.equals("Пределы - вычислить пределы числовых последовательностей")) {
+                loadChild(Predely2);
+            }
+            ParentListItems.put(HoldItem, ChildList);
+        }
 
-        listView.setAdapter(adapter);
+        expandablelistView = (ExpandableListView) findViewById(R.id.expandableListView1);
+        final ExpandableListAdapter expListAdapter = new ListAdapter(
+                this, ParentList, ParentListItems);
+        expandablelistView.setAdapter(expListAdapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        expandablelistView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                int itemPosition = position;
+            public boolean onChildClick(ExpandableListView parent, View v,
+                                        int groupPosition, int childPosition, long id) {
+                // TODO Auto-generated method stub
 
-                String itemValue = (String) listView.getItemAtPosition(position);
+                final String selected = (String) expListAdapter.getChild(
+                        groupPosition, childPosition);
 
-                switch (itemPosition) {
-                    case 0:
-                        Intent appInfo = new Intent(MainActivity.this, FormulasActivity.class);
-                        startActivity(appInfo);
+                // Switch case to open selected child element activity on child element selection.
+                Intent intent;
+                switch (selected) {
+                    case "Признаки делимости, таблица простых чисел":
+                        intent = new Intent(MainActivity.this, Priznakidelimosti.class);
+                        startActivity(intent);
                         break;
-                    case 1:
-                        Intent appInfo2 = new Intent(MainActivity.this, VectorMathAndGeom.class);
-                        startActivity(appInfo2);
+                    case "Корни и степени, модуль числа":
+                        intent = new Intent(MainActivity.this, ModulFomulas.class);
+                        startActivity(intent);
+                        break;
+                    case "Формула сокращенного умножения":
+                        intent = new Intent(MainActivity.this, FormulSokr.class);
+                        startActivity(intent);
+                        break;
+                    case "Прогресии":
+                        intent = new Intent(MainActivity.this, Progresii.class);
+                        startActivity(intent);
+                        break;
+                    case "Тригонометрия":
+                        intent = new Intent(MainActivity.this, Trigonomeria.class);
+                        startActivity(intent);
+                        break;
+                    case "Пределы, таблица производных и интегралов":
+                        intent = new Intent(MainActivity.this, TablicaProizvodnych.class);
+                        startActivity(intent);
+                        break;
+                    case "Логарифмы":
+                        intent = new Intent(MainActivity.this, Logarifms.class);
+                        startActivity(intent);
+                        break;
+                    case "Теория вероятности":
+                        intent = new Intent(MainActivity.this, TheorieVer.class);
+                        startActivity(intent);
+                        break;
+                    case "Комплексные числа":
+                        intent = new Intent(MainActivity.this, Komplex.class);
+                        startActivity(intent);
+                        break;
+
+                    /////////
+
+                    case "Решения задач 1":
+                        intent = new Intent(MainActivity.this, Alggeom1.class);
+                        startActivity(intent);
+                        break;
+                    case "Решения задач 2":
+                        intent = new Intent(MainActivity.this, AlgGeom2.class);
+                        startActivity(intent);
+                        break;
+                    case "Решения задач 3":
+                        intent = new Intent(MainActivity.this, AlgGeom3.class);
+                        startActivity(intent);
+                        break;
+                    case "Решения задач 4":
+                        intent = new Intent(MainActivity.this, AlgGeom4.class);
+                        startActivity(intent);
+                        break;
+                    case "Решения задач 5":
+                        intent = new Intent(MainActivity.this, AlgGeom5.class);
+                        startActivity(intent);
+                        break;
+                    case "Решения задач 6":
+                        intent = new Intent(MainActivity.this, AlgGeom6.class);
+                        startActivity(intent);
+                        break;
+                    case "Решения задач 7":
+                        intent = new Intent(MainActivity.this, AlgGeom7.class);
+                        startActivity(intent);
+                        break;
+                    case "Решения задач 8":
+                        intent = new Intent(MainActivity.this, AlgGeom8.class);
+                        startActivity(intent);
+                        break;
+                    case "Решения задач 9":
+                        intent = new Intent(MainActivity.this, AlgGeom9.class);
+                        startActivity(intent);
+                        break;
+                    case "Решения задач 10":
+                        intent = new Intent(MainActivity.this, AlgGeom10.class);
+                        startActivity(intent);
+                        break;
+
+                    /////////
+
+                    case "Решения задач 1-5":
+                        intent = new Intent(MainActivity.this, Predel1_5.class);
+                        startActivity(intent);
+                        break;
+                    case "Решения задач 6-10":
+                        intent = new Intent(MainActivity.this, Predel6_10.class);
+                        startActivity(intent);
+                        break;
+                    case "Решения задач 11-15":
+                        intent = new Intent(MainActivity.this, Predel11_15.class);
+                        startActivity(intent);
+                        break;
+                    case "Решения задач 16-20":
+                        intent = new Intent(MainActivity.this, Predel16_20.class);
+                        startActivity(intent);
+                        break;
+                    case "Решения задач 21-25":
+                        intent = new Intent(MainActivity.this, Predel21_25.class);
+                        startActivity(intent);
+                        break;
+                    case "Решения задач 26-30":
+                        intent = new Intent(MainActivity.this, Predel26_30.class);
+                        startActivity(intent);
+                        break;
+
+                    /////////
+
+                    case "Решения задач 1-9":
+                        intent = new Intent(MainActivity.this, Predel2_1_9.class);
+                        startActivity(intent);
+                        break;
+                    case "Решения задач 10-22":
+                        intent = new Intent(MainActivity.this, Predel2_10_22.class);
+                        startActivity(intent);
+                        break;
+                    case "Решения задач 23-31":
+                        intent = new Intent(MainActivity.this, Predel2_23_31.class);
+                        startActivity(intent);
                         break;
                 }
+
+                return true;
             }
         });
+
+    }
+
+    private void loadChild(String[] ParentElementsName) {
+        ChildList = new ArrayList<String>();
+        for (String model : ParentElementsName)
+            ChildList.add(model);
     }
 
     @Override
@@ -122,16 +295,11 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
 
-        Class fragmentClass = null;
-
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
 
-        if (id == R.id.nav_home) {
-
-
-        } else if (id == R.id.nav_calculator) {
+        if (id == R.id.nav_calculator) {
             Intent i = new Intent(MainActivity.this, Calculator.class);
             startActivity(i);
 
@@ -150,7 +318,6 @@ public class MainActivity extends AppCompatActivity
             d.setContentView(R.layout.information_dialog);
             d.show();
 
-
             Button btnOk = d.findViewById(R.id.ok_button);
 
             btnOk.setOnClickListener(new View.OnClickListener() {
@@ -160,15 +327,6 @@ public class MainActivity extends AppCompatActivity
                 }
             });
         }
-
-
-        textView = (ShimmerTextView) findViewById(R.id.shimmer_tv);
-        shimmer = new Shimmer()
-                .setDirection(Shimmer.ANIMATION_DIRECTION_LTR)
-                .setDuration(1000)
-                .setStartDelay(500);
-
-        shimmer.start(textView);
 
         return true;
     }

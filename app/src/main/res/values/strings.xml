@@ -34,5 +34,16 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_komplex">Komplex</string>
+    <string name="title_activity_predely">PredelyActivity</string>
+    <string name="title_activity_predel1_5">Predel1_5</string>
+    <string name="title_activity_predel6_10">Predel6_10</string>
+    <string name="title_activity_predel11_15">Predel11_15</string>
+    <string name="title_activity_predel16_20">Predel16_20</string>
+    <string name="title_activity_predel21_25">Predel21_25</string>
+    <string name="title_activity_predel26_30">Predel26_30</string>
+    <string name="title_activity_predel2_1_9">Predel2_1_9</string>
+    <string name="title_activity_predel2_10_22">Predel2_10_22</string>
+    <string name="title_activity_predel2_23_31">Predel2_23_31</string>
 
 </resources>

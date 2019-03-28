@@ -29,7 +29,7 @@ public class Priznakidelimosti extends AppCompatActivity {
                 "ca-app-pub-3860319943737586~1074237669");
 
         pdfViewer=(PDFView) findViewById(R.id.priznaki_delimosti);
-        pdfViewer.fromAsset("priznaki_delimosti.pdf").load();
+        pdfViewer.fromAsset("formul/priznaki_delimosti.pdf").load();
 
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

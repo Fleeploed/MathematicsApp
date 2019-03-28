@@ -20,14 +20,12 @@
         android:contentDescription="@string/nav_header_desc"
         app:srcCompat="@mipmap/ic_launcher_round" />
 
-
-    <com.romainpiel.shimmer.ShimmerTextView
-        android:id="@+id/shimmer_tv"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Математика"
-        android:textColor="#222020"
+        android:textColor="#EBEBEB"
         android:textSize="36sp"
-        android:textStyle="bold" />
+        />
 
 </LinearLayout>

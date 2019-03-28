@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VectorMathAndGeom">
+    tools:context=".Predel1_5">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -20,6 +20,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_vector_math_and_geom" />
+    <include layout="@layout/content_predel1_5" />
+
 
 </android.support.design.widget.CoordinatorLayout>

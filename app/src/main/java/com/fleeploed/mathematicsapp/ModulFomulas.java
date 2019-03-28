@@ -26,7 +26,7 @@ public class ModulFomulas extends AppCompatActivity {
                 "ca-app-pub-3860319943737586~1074237669");
 
         pdfViewer=(PDFView) findViewById(R.id.arifmet_korn_stepen);
-        pdfViewer.fromAsset("arifmet_korn_stepen.pdf").load();
+        pdfViewer.fromAsset("formul/arifmet_korn_stepen.pdf").load();
 
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
